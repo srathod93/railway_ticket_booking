@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-24 15:48:09.028559",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "journey_date",
+  "ticket_count",
+  "total_tickets"
+ ],
+ "fields": [
+  {
+   "fieldname": "journey_date",
+   "fieldtype": "Date",
+   "label": "Journey Date"
+  },
+  {
+   "fieldname": "ticket_count",
+   "fieldtype": "Button",
+   "label": "Ticket Count"
+  },
+  {
+   "fieldname": "total_tickets",
+   "fieldtype": "Data",
+   "label": "Total tickets"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-24 15:48:09.028559",
+ "modified_by": "Administrator",
+ "module": "booking tickets",
+ "name": "Report Analysis",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

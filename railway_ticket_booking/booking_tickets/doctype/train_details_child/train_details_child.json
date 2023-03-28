@@ -1,0 +1,109 @@
+{
+ "_comments": "[{\"comment\": \"Action Failed<br><br><pre><code>Traceback (most recent call last):\\n  File \\\"apps/frappe/frappe/mod...\", \"by\": \"Administrator\", \"name\": \"8da9606596\"}]",
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-20 07:48:38.216653",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "check_box",
+  "train_name",
+  "train_type",
+  "from_station",
+  "to_station",
+  "distance",
+  "start_time",
+  "end_time",
+  "total_journey_time",
+  "available_tickets",
+  "rate_per_ticket",
+  "tickets_capecity"
+ ],
+ "fields": [
+  {
+   "fieldname": "train_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Train Name"
+  },
+  {
+   "fieldname": "train_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Train Type"
+  },
+  {
+   "fieldname": "from_station",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "From Station"
+  },
+  {
+   "fieldname": "to_station",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "To Station"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Distance/K.M"
+  },
+  {
+   "fieldname": "rate_per_ticket",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Rate Per ticket"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "End time"
+  },
+  {
+   "fieldname": "available_tickets",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Available Ticketes"
+  },
+  {
+   "fieldname": "total_journey_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Time"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_box",
+   "fieldtype": "Check",
+   "label": "Check Box"
+  },
+  {
+   "fieldname": "tickets_capecity",
+   "fieldtype": "Data",
+   "label": "Tickets capecity",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 13:07:46.788563",
+ "modified_by": "Administrator",
+ "module": "booking tickets",
+ "name": "Train Details_child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

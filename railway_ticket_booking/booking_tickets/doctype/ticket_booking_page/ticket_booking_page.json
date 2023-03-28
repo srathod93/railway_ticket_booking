@@ -1,0 +1,242 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-17 12:25:37.754308",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "booking_user",
+  "password",
+  "check_user",
+  "user_validate",
+  "section_break_maw0m",
+  "from_station",
+  "to_station",
+  "journey_date",
+  "train_avalable",
+  "train_details_section",
+  "train",
+  "traveller_details_section",
+  "traveller_full_nmae",
+  "column_break_xlvas",
+  "age",
+  "column_break_esebg",
+  "gender",
+  "column_break_r7wht",
+  "add_data",
+  "column_break_wb7si",
+  "section_break_7gmjx",
+  "data",
+  "payement_details_section",
+  "check_amount",
+  "section_break_h5rc0",
+  "fare",
+  "column_break_wsw9x",
+  "gst",
+  "column_break_a3i33",
+  "total_fare",
+  "column_break_jnykg",
+  "section_break_jqbz4",
+  "book_ticket"
+ ],
+ "fields": [
+  {
+   "fieldname": "booking_user",
+   "fieldtype": "Link",
+   "label": "Booking User",
+   "options": "Booking User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": " Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_maw0m",
+   "fieldtype": "Section Break",
+   "label": "Booking Details"
+  },
+  {
+   "fieldname": "from_station",
+   "fieldtype": "Link",
+   "label": "From Station ",
+   "options": "Station",
+   "reqd": 1
+  },
+  {
+   "fieldname": "journey_date",
+   "fieldtype": "Date",
+   "label": "Journey Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "train_details_section",
+   "fieldtype": "Section Break",
+   "label": "Train Details"
+  },
+  {
+   "fieldname": "train",
+   "fieldtype": "Table",
+   "label": "Train",
+   "options": "Train Details_child",
+   "reqd": 1
+  },
+  {
+   "fieldname": "train_avalable",
+   "fieldtype": "Button",
+   "label": "Train Avalable"
+  },
+  {
+   "fieldname": "traveller_details_section",
+   "fieldtype": "Section Break",
+   "label": "Traveller Details"
+  },
+  {
+   "fieldname": "traveller_full_nmae",
+   "fieldtype": "Data",
+   "label": "Traveller Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nTrance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "check_user",
+   "fieldtype": "Button",
+   "label": "Check User "
+  },
+  {
+   "fieldname": "to_station",
+   "fieldtype": "Link",
+   "label": "To Stations",
+   "options": "Station",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user_validate",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "User Validate",
+   "options": "\nNo\nYes",
+   "read_only": 1
+  },
+  {
+   "fieldname": "add_data",
+   "fieldtype": "Button",
+   "label": "Add Data"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Table",
+   "label": "Data",
+   "options": "Traveler details"
+  },
+  {
+   "fieldname": "payement_details_section",
+   "fieldtype": "Section Break",
+   "label": "Payement Details"
+  },
+  {
+   "fieldname": "fare",
+   "fieldtype": "Data",
+   "label": "Fare"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Data",
+   "label": "Gst"
+  },
+  {
+   "fieldname": "total_fare",
+   "fieldtype": "Data",
+   "label": "Total fare"
+  },
+  {
+   "fieldname": "column_break_xlvas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_esebg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_r7wht",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wb7si",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7gmjx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_amount",
+   "fieldtype": "Button",
+   "label": "Check Amount"
+  },
+  {
+   "fieldname": "column_break_wsw9x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_a3i33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jnykg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_h5rc0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "book_ticket",
+   "fieldtype": "Button",
+   "label": "Book Ticket"
+  },
+  {
+   "fieldname": "section_break_jqbz4",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-03-23 13:25:17.086896",
+ "modified_by": "Administrator",
+ "module": "booking tickets",
+ "name": "Ticket Booking Page",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

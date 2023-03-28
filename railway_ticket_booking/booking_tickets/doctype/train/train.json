@@ -1,0 +1,138 @@
+{
+ "_comments": "[]",
+ "_liked_by": "[]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "train.###",
+ "creation": "2023-03-16 10:24:33.243651",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "train_name",
+  "train_type",
+  "from_station",
+  "to_station",
+  "distance",
+  "rate_per_ticket",
+  "available_tickets",
+  "start_time",
+  "end_time",
+  "total_journey_time",
+  "number_of_boggy",
+  "occupency_perboggy",
+  "total_citing_capacity"
+ ],
+ "fields": [
+  {
+   "fieldname": "train_name",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Train Name",
+   "options": "1.Surat Superfast Expres\n2.Flying Rani\n3.Ahemdabad Express\n4.jalgaon Expres\n5.Banglore Express\n6.Pune Dound Express\n7.Surat Bhusawal Local",
+   "reqd": 1
+  },
+  {
+   "fieldname": "train_type",
+   "fieldtype": "Select",
+   "label": "Train Type",
+   "options": "Local\nExpress",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_station",
+   "fieldtype": "Link",
+   "label": "From Station",
+   "options": "Station",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_station",
+   "fieldtype": "Link",
+   "label": "To Station",
+   "options": "Station",
+   "reqd": 1
+  },
+  {
+   "fieldname": "available_tickets",
+   "fieldtype": "Int",
+   "label": "Available Tickets",
+   "read_only": 1
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Int",
+   "label": "Distance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start TIme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_journey_time",
+   "fieldtype": "Data",
+   "label": "Total Journey Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "number_of_boggy",
+   "fieldtype": "Int",
+   "label": "Number Of Boggy",
+   "reqd": 1
+  },
+  {
+   "fieldname": "occupency_perboggy",
+   "fieldtype": "Int",
+   "label": "Occupency Perboggy"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "EndTime",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate_per_ticket",
+   "fieldtype": "Int",
+   "label": "Rate Per Ticket",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_citing_capacity",
+   "fieldtype": "Data",
+   "label": "Total Citing Capacity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-21 13:10:37.850833",
+ "modified_by": "Administrator",
+ "module": "booking tickets",
+ "name": "Train",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Booking_User.####",
+ "creation": "2023-03-23 08:07:22.231500",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "prnno",
+  "journey_date",
+  "from_station",
+  "to_station",
+  "train",
+  "traveller_full_name",
+  "gender",
+  "age",
+  "ticketes_quntity",
+  "fare",
+  "gst",
+  "total_fare",
+  "available_ticketes",
+  "traveler_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_station",
+   "fieldtype": "Data",
+   "label": "From Station"
+  },
+  {
+   "fieldname": "to_station",
+   "fieldtype": "Data",
+   "label": "To Station"
+  },
+  {
+   "fieldname": "journey_date",
+   "fieldtype": "Date",
+   "label": "Journey Date"
+  },
+  {
+   "fieldname": "train",
+   "fieldtype": "Data",
+   "label": "Train "
+  },
+  {
+   "fieldname": "traveller_full_name",
+   "fieldtype": "Data",
+   "label": "Traveller Full Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age "
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "total_fare",
+   "fieldtype": "Data",
+   "label": "Total fare"
+  },
+  {
+   "fieldname": "prnno",
+   "fieldtype": "Data",
+   "label": "PrnNo"
+  },
+  {
+   "fieldname": "fare",
+   "fieldtype": "Data",
+   "label": "Fare"
+  },
+  {
+   "fieldname": "gst",
+   "fieldtype": "Data",
+   "label": "Gst"
+  },
+  {
+   "fieldname": "ticketes_quntity",
+   "fieldtype": "Data",
+   "label": "Ticketes quantity"
+  },
+  {
+   "fieldname": "available_ticketes",
+   "fieldtype": "Data",
+   "label": "Available Ticketes"
+  },
+  {
+   "fieldname": "traveler_details",
+   "fieldtype": "Table",
+   "label": "Traveler Details",
+   "options": "Traveler details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-23 16:11:31.559629",
+ "modified_by": "Administrator",
+ "module": "booking tickets",
+ "name": "Booking Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
