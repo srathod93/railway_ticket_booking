@@ -111,6 +111,7 @@ frappe.ui.form.on('Ticket Booking Page', {
 	
 	book_ticket: function(frm){
 		//
+		frappe.warn('Are you sure you want to proceed?')
 		if (!frm.doc.booking_user,!frm.doc.password,!frm.doc.user_validate,!frm.doc.from_station,!frm.doc.to_station,
 			!frm.doc.journey_date,!frm.doc.train,!frm.doc.traveller_full_nmae,!frm.doc.age,!frm.doc.gender,!frm.doc.data,!frm.doc.fare,!frm.doc.total_fare) {
 			frappe.throw("Please Fillup These All Fields");
